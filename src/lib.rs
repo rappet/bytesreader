@@ -45,7 +45,7 @@ where
                 }
 
                 if let Some(position_relative) =
-                memchr::memchr(byte, &self.buffer.as_ref()[old_length..])
+                    memchr::memchr(byte, &self.buffer.as_ref()[old_length..])
                 {
                     let position = position_relative + old_length;
                     return Ok(self.buffer.split_to(position + 1));
