@@ -35,7 +35,7 @@ where
                 //let bytes_read = self.extend_from_stream(128)?;
 
                 // End of stream, no new data
-                if self.buffer.len() == 0 {
+                if self.buffer.is_empty() {
                     return Err(std::io::ErrorKind::UnexpectedEof.into());
                 }
 
