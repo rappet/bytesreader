@@ -1,6 +1,6 @@
 [package]
 name = "bytesreader"
-version = "0.1.0"
+version = "0.1.0-alpha.1"
 authors = ["Raphael Peters <rappet@rappet.de>"]
 edition = "2018"
 license = "MIT"
@@ -9,3 +9,4 @@ license = "MIT"
 
 [dependencies]
 bytes = "0.6"
+memchr = "2.3"
